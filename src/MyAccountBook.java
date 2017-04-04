@@ -7,9 +7,10 @@ public class MyAccountBook {
     int busFee   = 1400;
     int coffee   = 3500;
     int forLunch = 7000;
+    int candy    = 1000;
 
-    int totalSpent = busFee + coffee + forLunch;
+    int totalSpent = busFee + coffee + forLunch + candy;
 
     System.out.println("오늘 쓴 경비는 " + totalSpent + "원 입니다.");
-}
+    }
 }
