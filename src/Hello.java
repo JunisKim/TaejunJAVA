@@ -3,7 +3,7 @@
  */
 public class Hello {
     public static void main(String[] args){
-        int feeForBus = 1400;
+        int feeForBus = 1300;
         System.out.println(feeForBus);
     }
 
