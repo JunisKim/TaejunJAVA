@@ -4,12 +4,19 @@
 public class AppleShop {
     public static void main(String[] args){
 
-        double iPadOriginalPrice = 999_000;
+        int iPadOriginalPrice = 999_000;
         double iPadDiscountedrate = 0.15;
 
 
-        int iPadDiscountedPrice = (int)(iPadOriginalPrice * (1-iPadDiscountedrate));
+        int iPadDiscountedPrice = getDiscountedPrice(iPadOriginalPrice, iPadDiscountedrate);
 
                 System.out.println("iPad Pro 정가: " + iPadDiscountedPrice +"원");
+    }
+
+    public static int getDiscountedPrice(int iPadOriginalPrice, double iPadDiscountedrate){
+        int DCPrice =
+                (int)(iPadOriginalPrice * (1-iPadDiscountedrate));
+
+        return DCPrice;
     }
 }
