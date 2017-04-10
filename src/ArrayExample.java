@@ -42,9 +42,13 @@ public class ArrayExample {
                 System.out.println(converted);
 
         */
-        int sum=0;
-        for (int e : iArr) sum=sum+e;
-        System.out.println(sum/iArr.length);
+        double result = calcAverage(iArr);
+        System.out.println(result);
         }
 
-    }
+        public static double calcAverage(int[] intArr){
+            int sum=0;
+            for (int e : intArr) sum=sum+e;
+            return (double)sum / intArr.length;
+        }
+        }

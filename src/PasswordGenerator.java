@@ -20,11 +20,15 @@ public class PasswordGenerator {
                 targetStr.substring(0,1).toUpperCase()
                     + targetStr.substring(1);
 
-        String passwordGenerated = prefix + squarelengthOfChar + targetStr+ postfix ;
+      //  String passwordGenerated = prefix + squarelengthOfChar + targetStr+ postfix ;
 
         //the last.. output the passwordGenerated
 
-        System.out.println(passwordGenerated);
+        PasswordGeneratorService service = new PasswordGeneratorService();
+
+        String result = service.makePassword(targetStr, prefix, postfix);
+
+        System.out.println(result);
 
     }
 }

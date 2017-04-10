@@ -33,7 +33,7 @@ public class InterestCaculator {
         } else{interestRate=1;}
 
         double interest =
-                originalMoney * interestRate/100 * (howLongSave/12);
+                calcInterest(originalMoney,interestRate,howLongSave);
 
 
 
